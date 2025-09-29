@@ -1,0 +1,82 @@
+@font-face {
+    font-family: header;
+    src: url(./LeagueSpartan-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    height : 100% ;
+    width : 100% ;
+}
+
+.head{
+    padding: 30px;
+    height: 180px;
+    text-align: center;
+    background-color: rgb(7, 47, 83);
+    color: aliceblue;
+}
+div > h1 {
+    font-size: xxx-large;
+}
+.head > p {
+    font-style: italic;
+    margin-top: -5px;
+}
+.card{
+    text-align: center;
+    height: 275 px;
+    width: 80%;
+    margin: 15px auto;
+    /* border: 10px; */
+    padding : 20px;
+}
+#about{
+    background-color: rgb(234, 223, 223);
+    height: 150px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#about p {
+    margin : auto 70px ; 
+    padding-top: 8px;
+}
+#ed{
+   background-color: yellow;
+   height: 200px ;
+}
+#skill{
+    background-color: rgb(236, 191, 236);
+    
+}
+#hob{
+    background-color: rgb(196, 255, 107);
+}
+#con{
+    background-color: bisque;
+    height: 310px ;
+}
+h3{
+    font-size: xx-large;
+}
+.s_card{
+    /* height: 30px; */
+    width : 50% ;
+    background-color: aliceblue;
+    padding: 10px;
+    margin : 10px auto ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.bottom{
+    text-align: center;
+    background-color: rgb(7, 47, 83);
+    color: aliceblue;
+}
+h3, h1 {
+    font-family: header;
+}
+p{
+}
