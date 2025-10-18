@@ -1,0 +1,90 @@
+@font-face {
+    font-family: regular;
+    src: url("./NType82-Regular.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+.first{
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: regular;
+    position: relative;
+}
+main img{
+    height: 36rem;
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+}
+.name{
+    color: white;
+    font-size: 16vw;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, #ff005c, #00d9ff, #00ff95);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    backdrop-filter: blur(45);
+    transition: background-size 0.8s ease;
+}
+#bg-name{
+    padding: 20px;
+}
+/* 
+span:hover{
+    background-size: 100% 100%;
+} */
+section span{
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    bottom: 30%;
+    right: 26%;
+    padding: 16px;
+}
+.border{
+    border: 1.5px dotted white;
+    height: 65px;
+    width: 170px;
+}
+.custom-shape-divider-bottom-1760197669 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1760197669 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1760197669 .shape-fill {
+    fill: #070404;
+}
+.sec{
+    background-color: rgb(0, 0, 0);
+     height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: regular;
+}
+.sec iframe{
+    height : 20vh ;
+    width : 20vw ;
+
+}

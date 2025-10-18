@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #c5dfb9;
+}
+@mixin flex-column($gap: 0px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+main {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    width: 100%;
+    padding: 1rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  div.container {
+    width: 100%;
+    @include flex-column(3rem);
+    border: 2px solid black;
+    padding: 20px;
+    background-color: rgb(255, 255, 108);
+    border-radius: 40px;
+
+    section.top {
+      form {
+        @include flex-column(1.8rem);
+        align-items: center;
+        // flex-direction: row;
+        label {
+          font-size: 2rem;
+        }
+        input {
+          width: 20rem;
+          height: 2.5rem;
+          border: none;
+          text-align: center;
+          font-size: 1.2rem;
+          border-radius: 20px;
+          box-shadow: 2px 2px 8px black;
+        }
+        button {
+          margin-left: 12rem;
+          width: 5rem;
+          height: 1.8rem;
+          border-radius: 15px;
+          box-shadow: 2px 2px 8px black;
+          border: none;
+        }
+      }
+    }
+    section.bottom {
+      width: 100%;
+
+      form.checkbox {
+        fieldset {
+          @include flex-column(0.6rem);
+          align-items: flex-start;
+          padding: 20px;
+          border: 2px solid black;
+          border-radius: 30px;
+          legend {
+            font-size: 1.5rem;
+            font-weight: 800;
+          }
+          input {
+            height: 1.2rem;
+            width: 1.2rem;
+            // border-radius: 50rem;
+          }
+          label {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 1.5px;
+    }
+
+    div.container {
+      section.top {
+        form {
+          flex-direction: row;
+          padding: 2.5rem;
+          justify-content: space-evenly;
+          input {
+            border: none;
+            width: 40rem;
+          }
+          button {
+            width: 6rem;
+            height: 2rem;
+            margin-top: 5rem;
+          }
+        }
+      }
+      section.bottom {
+        form.checkbox{
+            fieldset {
+                gap: 0.4rem;
+                legend {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+      }
+    }
+  }
+}
