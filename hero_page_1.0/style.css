@@ -8,9 +8,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  height: 199%;
+  height: 100%;
 }
 
 main {
@@ -25,7 +26,6 @@ main div.view-1 {
   gap: 10px;
   width: 100%;
   text-align: center;
-  border: 2px solid black;
 }
 main div.view-1 div.line {
   font-size: 5rem;
@@ -37,7 +37,7 @@ main div.view-1 div.line span {
 main div.view-1 div.desc {
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #46383C;
+  color: #46383c;
 }
 main div.view-1 div.two-btn {
   display: flex;
@@ -51,7 +51,7 @@ main div.view-1 div.two-btn {
 main div.view-1 div.two-btn a.btn {
   width: auto;
   padding: 25px 35px;
-  border: 2px solid #B8B9BF;
+  border: 2px solid #b8b9bf;
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -60,21 +60,30 @@ main div.view-1 div.two-btn a.btn {
 }
 main div.view-1 div.two-btn a#btn-2 {
   color: white;
-  background-color: #A135F6;
-  border: 1px solid #B764F8;
+  background-color: #a135f6;
+  border: 1px solid #b764f8;
 }
 main section.view-2 {
   width: 100%;
+  position: relative;
+  bottom: 5rem;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 6.5rem;
+  gap: 2rem;
+}
+main section.view-2 video {
+  height: auto;
+  width: 60%;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 2;
+  top: 5rem;
 }
 main section.view-2 div {
-  height: 5rem;
-  margin-bottom: 10rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,4 +91,10 @@ main section.view-2 div {
 main section.view-2 div img {
   width: 12rem;
   border-radius: 10px;
+}
+main section.view-2 .row1, main section.view-2 .row3 {
+  padding: 0 2rem;
+}
+main section.view-2 .row2 {
+  padding: 0 -2rem;
 }/*# sourceMappingURL=style.css.map */
